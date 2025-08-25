@@ -1,17 +1,34 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# Compiled output
+# Build e temporários
 /dist
 /tmp
 /out-tsc
 /bazel-out
+/.angular/cache
+/.angular/local
 
 # Node
 /node_modules
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
-# IDEs and editors
+# Ambiente e configs locais
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs e editores
 .idea/
 .project
 .classpath
@@ -19,6 +36,7 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+*.sublime-project
 
 # Visual Studio Code
 .vscode/*
@@ -26,17 +44,41 @@ yarn-error.log
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+.history/
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
+# Testes e coverage
 /coverage
-/libpeerconnection.log
-testem.log
-/typings
+/test-output
+/karma-coverage
+/.nyc_output
 
-# System files
+# Compilados / cache / artefatos
+.sass-cache/
+.cache/
+.eslintcache
+.parcel-cache
+.next/
+.nuxt/
+out/
+storybook-static/
+coverage-final.json
+
+# Sistema
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Outros (segurança + lixo)
+*.tgz
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*.orig
+
+# Arquivos de deploy/ci
+.vercel
+.netlify
+firebase-debug.log
