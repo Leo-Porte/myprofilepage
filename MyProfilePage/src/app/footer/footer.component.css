@@ -1,0 +1,33 @@
+.footer {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* garante que fique sempre visível */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900; /* abaixo do menu que tem z-index 1000+ */
+}
+
+.footer-text {
+  max-width: 70%;
+}
+
+.contact-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+  .contact-btn:hover {
+    background-color: #555;
+  }

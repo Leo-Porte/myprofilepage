@@ -1,0 +1,6 @@
+<app-menu (menuToggled)="onMenuToggled($event)"></app-menu>
+
+<router-outlet></router-outlet>
+
+<!-- footer só aparece quando o menu está fechado -->
+<app-footer *ngIf="!menuOpen"></app-footer>

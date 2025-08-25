@@ -1,2 +1,0 @@
-D:\myProfilePage\MyProfilePage\MyProfilePage\obj\Debug\MyProfilePage.esproj.CoreCompileInputs.cache
-D:\myprofilepagegit\myprofilepage\MyProfilePage\obj\Debug\MyProfilePage.esproj.CoreCompileInputs.cache

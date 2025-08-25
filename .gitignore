@@ -1,10 +1,11 @@
-# Build e temporários
+# ===== Build e temporários =====
 /dist
 /tmp
 /out-tsc
 /bazel-out
 /.angular/cache
 /.angular/local
+/out/
 
 # Node
 /node_modules
@@ -46,6 +47,13 @@ logs
 !.vscode/extensions.json
 .history/
 
+# Visual Studio específico
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 # Testes e coverage
 /coverage
 /test-output
@@ -56,10 +64,9 @@ logs
 .sass-cache/
 .cache/
 .eslintcache
-.parcel-cache
+.parcel-cache/
 .next/
 .nuxt/
-out/
 storybook-static/
 coverage-final.json
 
@@ -78,7 +85,16 @@ Desktop.ini
 *.temp
 *.orig
 
-# Arquivos de deploy/ci
+# Arquivos de deploy/CI
 .vercel
 .netlify
 firebase-debug.log
+
+# Vite / Angular específico
+MyProfilePage/.angular/cache/
+MyProfilePage/vite/
+MyProfilePage/obj/
+MyProfilePage/.vs/
+
+# Arquivos temporários do projeto
+*.tsbuildinfo
