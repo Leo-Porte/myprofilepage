@@ -8,12 +8,23 @@
 <div class="menu-overlay"
      [class.open]="isOpen"
      [class.closed]="!isOpen && wasOpened">
-  <nav class="menu-content">
-    <a href="#">Home</a>
-    <a href="#">Sobre</a>
-    <a href="#">Contato</a>
-  </nav>
 
+  <div class="menu-divider"></div>
+
+  <nav class="menu-content">
+    <!-- Cada link com container para o átomo -->
+    <div class="menu-item">
+      <a href="#">Home</a>
+      <div class="atom">
+        <div class="nucleus"></div>
+        <div class="electron electron1"></div>
+        <div class="electron electron2"></div>
+        <div class="electron electron3"></div>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Sobre</a></div>
+    <div class="menu-item"><a href="#">Contato</a></div>
+  </nav>
 
   <!-- Ícones sociais -->
   <div class="menu-socials">
@@ -22,7 +33,5 @@
     <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
     <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
-  <div class="menu-divider"></div> 
+
 </div>
-
-
