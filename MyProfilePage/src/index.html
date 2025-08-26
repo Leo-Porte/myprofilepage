@@ -13,8 +13,32 @@
 
   <!-- Favicon opcional -->
   <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- CSS inline para forçar o teste do footer -->
+  <style>
+    /* Define uma altura mínima no body para forçar a rolagem e testes de layout */
+    body {
+      min-height: 100vh; /* Define altura mínima para ocupar tela inteira */
+      display: flex;
+      flex-direction: column; /* Layout em coluna para que o footer fique ao final */
+    }
+
+    app-root {
+      /* Flex grow para permitir que o conteúdo principal se expanda */
+      flex-grow: 1;
+    }
+
+    .fill-content {
+      /* Classe para adicionar conteúdo extra e provocar o scroll */
+      height: 2000px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Classe adicionada ao div auxiliar para garantir que o conteúdo adicional seja renderizado -->
+  <div class="fill-content"></div>
+
+  <!-- Aplicação Angular -->
   <app-root></app-root>
 </body>
 </html>
